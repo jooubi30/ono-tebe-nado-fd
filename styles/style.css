@@ -1,5 +1,5 @@
 .header {
-  padding: 92px 50px 96px 50px;
+  padding: 92px 50px 90px 50px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
@@ -30,7 +30,7 @@
 
 .header__logo {
   display: block;
-  width: 131.13px;
+  width: 138px;
 }
 
 .address {
@@ -56,10 +56,11 @@
 .cover {
   margin-bottom: 180px;
   padding: 165px 50px 50px 50px;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   position: relative;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   min-height: 757px;
   color: #FFFFFF;
 }
@@ -88,16 +89,12 @@
   row-gap: 20px;
 }
 
-.aligned-text {
-  display: inline-block;
-}
-
 .aligned-text_left {
   text-align: left;
 }
 
 .aligned-text_center {
-  margin-left: 330.5px;
+  text-align: center;
 }
 
 .aligned-text_right {
@@ -148,10 +145,9 @@
 .lots__heading {
   font-weight: 700;
   font-size: 40px;
-  line-height: 1;
   text-transform: uppercase;
   margin-left: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .lots__card-list {
@@ -181,6 +177,9 @@
   color: #FFFFFF;
   padding: 48px 40px;
   justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card__title {
@@ -204,22 +203,15 @@
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
-
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .lots__look-more-link {
@@ -248,7 +240,7 @@
 }
 
 .about__column:last-child {
-  margin-top: 98px;
+  margin-top: 103px;
   margin-left: 25px;
 }
 
@@ -270,12 +262,12 @@
 .about__title {
   font-weight: 700;
   font-size: 40px;
-  line-height: 100%;
   text-transform: uppercase;
   margin-bottom: 100px;
 }
 
 .about__text {
+  max-width: 688px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
@@ -290,11 +282,19 @@
   grid-template-columns: repeat(3,1fr);
 }
 
+.footer__address {
+  max-width: 264px;
+}
+
 .footer__menu-list {
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.footer__menu-list-item {
+  line-height: 21px;
 }
 
 .footer__menu-link {
